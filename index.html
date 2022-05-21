@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Git for students</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Git for students</h1>
+        <p>Выступление перед студентами. Цель дать общее представление.</p>
+    </header>
+
+    <section class="slide">
+        <h2 class="cover">Git и технические аспекты командной разработки</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="cover">Кто из вас работал с Git?</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="cover">А для чего он вообще нужен?</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="">А для чего он вообще нужен?</h2>
+        <ul>
+            <li>Командная работа</li>
+            <li>Контроль и управление версиями</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="" style="margin-left: -40px;">Почему <br>я решил <br>рассказать<br> про Git.</h2>
+        <img src="https://w6p.ru/MWQ0MmF.png" alt="" class="cover place right">
+    </section>
+
+    <section class="slide">
+        <h2 class="">Я не буду рассказывать основные команды</h2>
+        <img src="https://w6p.ru/ZTc5NTc.png" alt="" style="width: 500px">
+    </section>
+
+    <section class="slide">
+        <h2>Поговорим о</h2>
+        <ul>
+            <li>Основах</li>
+            <li>Стандартах</li>
+            <li>Затронем немного CI</li>
+            <li>Командной работе</li>
+            <li>Методологиях</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Пару слов об основных сущностях</h2>
+        <ul>
+            <li class="next">Репозиторий</li>
+            <li class="next">Есть локальный и удаленный <span class="next">(github, gitlab, bitbucket)</span></li>
+            <li class="next">Коммит &mdash; фиксация набора изменений</li>
+            <li class="next">Ветка &mdash; последовательность коммитов</li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2 class="cover">Давайте поразмышляем как может строится командная работа</h2>
+    </section>
+
+    <section class="slide clear">
+        <h2>Дано</h2>
+        <img class="cover place right" src="https://w6p.ru/YjdjZjN.png" alt="" style="width: 700px" >
+    </section>
+
+
+    <section class="slide">
+        <h2 class="cover">Сколько нужно поднять площадок на сервере?</h2>
+    </section>
+
+    <section class="slide clear">
+        <h2>Еще <br>нужно?</h2>
+        <img class="cover place right" src="https://w6p.ru/YjdlMzg.png" alt="" style="width: 700px;margin-right: 50px;" >
+    </section>
+
+    <section class="slide ">
+        <img class="cover place " src="https://w6p.ru/NjU4NDE.png" alt="" style="width: 700px;margin-right: 50px;" >
+    </section>
+
+    <section class="slide ">
+        <img class="cover place " src="https://w6p.ru/YWU3Njg.png" alt="" style="width: 700px;margin-right: 50px;" >
+    </section>
+
+    <section class="slide">
+        <h2 class="place left" style="margin-left: 30px;">Сколько нужно <br>веток для <br>работы?</h2>
+        <img class="place right " src="https://w6p.ru/YWU3Njg.png" alt="" style="width: 600px;margin-right: 50px;" >
+    </section>
+
+    <section class="slide clear">
+        <img class=" place left" src="https://w6p.ru/YWU3Njg.png" alt="" style="width: 480px; margin-left: 20px;" >
+        <img class=" place right" src="https://w6p.ru/MTVlZGY.png" alt="" style="width: 480px; margin-right: 50px;" >
+    </section>
+
+    <section class="slide clear">
+        <img class=" place left" src="https://w6p.ru/YWU3Njg.png" alt="" style="width: 480px; margin-right: 50px;" >
+        <img class=" place right" src="https://w6p.ru/MjM1ZjE.png" alt="" style="width: 480px; margin-right: 50px;" >
+    </section>
+
+    <section class="slide">
+        <h2 class="cover">Методология #1: Git FLow</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="">Git FLow: проблемы</h2>
+        <ul>
+            <li>Долгоживущие ветки</li>
+            <li>Старение веток</li>
+            <li>Конфликты</li>
+            <li>Дублирование функционала и необходимость более тщательной синхронизации</li>
+            <li>Долгий цикл выкатки изменения, костыль в виде хотфикс веток</li>
+            <li>и др.</li>
+            <li>Больше подходит для команд с не слишком частым релизным циклом</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="cover">Методология #2: <br>Trunk Based Development</h2>
+    </section>
+
+
+    <section class="slide clear">
+        <img class=" place left" src="https://w6p.ru/N2RmOGU.png" alt="" style="width: 480px; margin-left: 50px;" >
+        <img class=" place right" src="https://w6p.ru/MzdlZDZ.png" alt="" style="width: 280px; margin-right: 50px;" >
+    </section>
+
+
+
+    <section class="slide clear">
+        <img class=" place left" src="https://w6p.ru/OTEyMGN.png" alt="" style="width: 480px; margin-left: 50px;" >
+        <img class=" place right" src="https://w6p.ru/MzdlZDZ.png" alt="" style="width: 280px; margin-right: 50px;" >
+    </section>
+
+    <section class="slide">
+        <h2 class="cover">Стандарты коммитов</h2>
+    </section>
+
+    <section class="slide">
+        <img class=" cover" src="https://daily-dev-tips.com/images/20-11-2021.jpg" alt="" style="" >
+    </section>
+
+
+    <section class="slide">
+        <img class=" cover" src="https://w6p.ru/MDZkYjF.png" alt="" style="" >
+    </section>
+
+
+    <section class="slide">
+        <img class=" cover" src="https://w6p.ru/NmNiYjU.png" alt="" style="" >
+    </section>
+
+    <section class="slide">
+        <img class=" cover" src="https://w6p.ru/NzViNjZ.png" alt="" style="" >
+    </section>
+
+
+
+    <section class="slide">
+        <img class=" cover" src="https://w6p.ru/YThkZjV.png" alt="" style="" >
+    </section>
+
+
+
+    <section class="slide">
+        <img class=" cover" src="https://res.cloudinary.com/practicaldev/image/fetch/s--uw1iTGzy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://github.com/folke/devmoji/raw/master/assets/devmoji--list.png" alt="" style="" >
+    </section>
+
+    <section class="slide">
+        <img class=" cover" src="https://w6p.ru/ZmViNWV.png" alt="" style="" >
+    </section>
+
+    <section class="slide">
+        <img class=" cover" src="https://www.freecodecamp.org/news/content/images/size/w2000/2021/11/Thumbnail.png" alt="" style="" >
+    </section>
+
+
+    <section class="slide">
+        <h2 class="">Выводы</h2>
+        <ul>
+            <li>Думайте о методологии. <br>Хорошая методология экономит время, деньги и нервы</li>
+            <li class="next">Автоматизируйте деплой &mdash; это всегда окупается</li>
+            <li class="next">Качество описания коммитов крайне важно.
+                <ul>
+                    <li>Внедряйте и соблюдайте стандарт. </li>
+                    <li>Автоматизируйте проверку.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+
+    <footer class="badge">
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2022 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
